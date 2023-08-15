@@ -1,0 +1,1419 @@
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.inner {
+  max-width: 1300px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mini-header {
+  width: 100%;
+  height: 40px;
+  background-color: #2a2a2a;
+  position: relative;
+  z-index: 1090;
+}
+.mini-header .main {
+  padding-top: 10px;
+  z-index: 1090;
+}
+.mini-header .main .mini-header-left p {
+  color: white;
+  font-size: 13px;
+}
+.mini-header .main .mini-header-left p span {
+  color: #f5a425;
+}
+.mini-header .main .mini-header-right ul {
+  float: right;
+}
+.mini-header .main .mini-header-right ul li {
+  float: left;
+  list-style: none;
+  padding-left: 20px;
+}
+.mini-header .main .mini-header-right ul li a {
+  color: white;
+  transition: 0.5s;
+  letter-spacing: 1px;
+}
+.mini-header .main .mini-header-right ul li a:hover {
+  color: #f5a425;
+}
+
+.sticky {
+  position: sticky;
+  top: 0px;
+}
+
+header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1090;
+}
+header .banner {
+  padding: 34px 15px;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: 110px;
+}
+header .banner .heading a {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+header .banner nav ul {
+  float: right;
+}
+header .banner nav ul li {
+  float: left;
+  list-style: none;
+  padding-left: 20px;
+  padding-top: 7.5px;
+}
+header .banner nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+header .banner nav ul li a:hover {
+  color: #f5a425;
+}
+header .banner .fa {
+  display: none;
+}
+
+#bg-video {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.banner-text {
+  position: relative;
+  color: white;
+  width: 100%;
+  top: 150px;
+}
+.banner-text h6 {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.banner-text h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.banner-text p {
+  line-height: 23px;
+}
+.banner-text p a {
+  color: #f5a425;
+  text-decoration: none;
+}
+.banner-text #anchar {
+  font-size: 13px;
+  color: #fff;
+  background-color: #a12c2f;
+  padding: 12px 30px;
+  border-radius: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+#slider1 {
+  margin-top: 330px;
+}
+
+.item1 {
+  background: url("../img/service-item-bg.jpg");
+  width: 100%;
+  height: auto;
+  color: white;
+  background-position: center center;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  background-size: cover;
+}
+.item1 img {
+  width: 20% !important;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.item1 h4 {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.item1 p {
+  font-size: 13px;
+}
+
+.top .owl-prev, .owl-next {
+  position: absolute;
+  top: 50%;
+  color: white;
+  font-size: 1.7rem !important;
+  font-weight: 500 !important;
+}
+
+.top .owl-nav {
+  color: white;
+}
+
+.top .owl-prev {
+  left: -50px;
+  top: 70%;
+  border: 1px solid white !important;
+  width: 50px;
+  height: 50px;
+  margin-top: -80px !important;
+  transition: 0.5s;
+  background-color: white;
+}
+
+.top .owl-next {
+  right: -50px;
+  top: 40%;
+  border: 1px solid white !important;
+  width: 50px;
+  height: 50px;
+  margin-top: -10px !important;
+  transition: 0.5s;
+  background-color: white;
+}
+
+.top .owl-next:hover {
+  border: 0px !important;
+}
+
+.top .owl-prev:hover {
+  border: 0px !important;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+  margin: 100px;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+  border-radius: 100% !important;
+}
+
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot {
+  background-color: white !important;
+  color: black !important;
+}
+
+.fa {
+  font-size: 20px !important;
+}
+
+.bigwrapper {
+  width: 100%;
+  background: url("../img/meetings-bg.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.bigwrapper .meeting .text {
+  padding-top: 100px;
+  color: white;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.15);
+  padding-bottom: 30px;
+}
+.bigwrapper .meeting .text h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.bigwrapper .meeting-catgories {
+  padding: 80px 15px 25px 15px;
+}
+.bigwrapper .meeting-catgories .meeting-left {
+  width: 32%;
+  background-color: white;
+  padding: 60px 50px;
+  border-radius: 20px;
+}
+.bigwrapper .meeting-catgories .meeting-left ul {
+  position: relative;
+  top: 30px;
+}
+.bigwrapper .meeting-catgories .meeting-left ul li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+.bigwrapper .meeting-catgories .meeting-left ul li a {
+  color: #1f272b;
+  transition: 0.5s;
+  text-decoration: none;
+  font-size: 17px;
+}
+.bigwrapper .meeting-catgories .meeting-left ul li a:hover {
+  color: #f5a425;
+  text-decoration: underline;
+  letter-spacing: 1px;
+}
+.bigwrapper .meeting-catgories .meeting-left #all {
+  padding: 12px 65px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 22px;
+  background-color: #a12c2f;
+  color: white;
+  position: relative;
+  top: 70px;
+  text-transform: uppercase;
+}
+.bigwrapper .meeting-catgories .meeting-center {
+  width: 32%;
+}
+.bigwrapper .meeting-catgories .meeting-center img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+.bigwrapper .meeting-catgories .meeting-center .image-text {
+  background-color: white;
+}
+.bigwrapper .meeting-catgories .meeting-right {
+  width: 32%;
+}
+.bigwrapper .meeting-catgories .meeting-right img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+.bigwrapper .image {
+  position: relative;
+}
+.bigwrapper .image span {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.bigwrapper .image h4 {
+  text-align: center;
+}
+.bigwrapper .image-text {
+  background-color: white;
+  padding: 30px;
+  border-radius: 0px 0px 20px 20px;
+  position: relative;
+  bottom: 7px;
+}
+.bigwrapper .image-text .nov {
+  width: 10%;
+}
+.bigwrapper .image-text .nov span {
+  color: #a12c2f;
+}
+.bigwrapper .image-text .nov-text {
+  width: 80%;
+}
+.bigwrapper .image-text .nov-text h4 {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.bigwrapper .meeting-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 130px;
+}
+.bigwrapper .meeting-2 img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+.bigwrapper .meeting-2 .left {
+  width: 33%;
+}
+
+.team {
+  width: 100%;
+  background: url("../img/apply-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 130px 0px;
+}
+.team .team-left {
+  width: 48%;
+}
+.team .team-left .team-left-left {
+  background-color: rgba(250, 250, 250, 0.15);
+  padding: 30px;
+}
+.team .team-left .team-left-left h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.team .team-left .team-left-left p {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.team .team-left .team-left-left a {
+  font-size: 13px;
+  color: #fff;
+  background-color: #a12c2f;
+  padding: 12px 30px;
+  border-radius: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.team .team-left .team-left-left a:hover {
+  opacity: 0.7;
+}
+.team .team-left .team-left-left #yellow {
+  font-size: 13px;
+  color: #fff;
+  background-color: #f5a425;
+  padding: 12px 30px;
+  border-radius: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.team .team-left .team-left-left #yellow:hover {
+  opacity: 0.7;
+}
+.team .team-left .margin-bottom {
+  margin-bottom: 20px;
+}
+.team .team-right {
+  width: 48%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+}
+.team .team-right h3 {
+  color: black;
+  padding: 20px 0px;
+  display: inline-block;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.team .team-right h3:hover {
+  color: #f5a425;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.team .team-right p {
+  font-size: 13px;
+  line-height: 25px;
+  color: #2a2a2a;
+  padding-left: 30px;
+  text-align: justify;
+  border-bottom: 0.5px solid lightgray;
+}
+
+.course {
+  width: 100%;
+  background: url("../img/meetings-page-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 130px 0px;
+}
+.course .course-text {
+  margin-bottom: 50px;
+}
+.course .course-text h2 {
+  color: white;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.15);
+}
+.course .course-text .item-1 img {
+  width: 70% !important;
+}
+.course .img-text {
+  background-color: white;
+  padding: 30px 30px 60px 30px;
+}
+.course .img-text ul {
+  float: left;
+}
+.course .img-text ul li {
+  float: left;
+  list-style: none;
+  color: #f5a425;
+  padding-left: 10px;
+}
+.course .img-text h4 {
+  font-weight: 400;
+  font-size: 17.5px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.course .dolor {
+  float: right;
+}
+.course .dolor h5 {
+  font-size: 17px;
+  color: #a12c2f;
+}
+
+.top2 .owl-prev, .owl-next {
+  position: absolute;
+  top: 50%;
+  color: white;
+  font-size: 1.7rem !important;
+  font-weight: 500 !important;
+}
+
+.top2 .owl-nav {
+  color: white;
+}
+
+.top2 .owl-prev {
+  left: -50px;
+  top: 60%;
+  border: 1px solid white !important;
+  width: 50px;
+  height: 50px;
+  margin-top: -80px !important;
+  transition: 0.5s;
+  background-color: white;
+}
+
+.top2 .owl-next {
+  right: -50px;
+  top: 45%;
+  border: 1px solid white !important;
+  width: 50px;
+  height: 50px;
+  margin-top: -10px !important;
+  transition: 0.5s;
+  background-color: white;
+}
+
+.top2 .owl-next:hover {
+  border: 0px !important;
+}
+
+.top2 .owl-prev:hover {
+  border: 0px !important;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+  margin: 100px;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+  border-radius: 100% !important;
+}
+
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot {
+  background-color: white !important;
+  color: black !important;
+}
+
+.fa {
+  font-size: 20px !important;
+}
+
+.about {
+  width: 100%;
+  background: url("../img/facts-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  padding: 130px 0px;
+  height: 100%;
+}
+.about .about-text {
+  margin-bottom: 30px;
+}
+.about .about-text h1 {
+  color: white;
+  font-size: 35px;
+}
+.about .first {
+  width: 25%;
+  float: left;
+  margin-top: 40px;
+}
+.about .first .numbring {
+  border-radius: 20px;
+  background-color: rgba(250, 250, 250, 0.15);
+  margin-bottom: 30px;
+  padding: 30px;
+}
+.about .second {
+  width: 25%;
+  float: left;
+  padding-top: 40px;
+  margin: 60px 30px 0px 30px;
+}
+.about .second .numbring {
+  border-radius: 20px;
+  background-color: rgba(250, 250, 250, 0.15);
+  margin-bottom: 30px;
+  padding: 30px;
+}
+.about .stat-count {
+  color: #f5a425;
+  font-size: 40px !important;
+  text-align: center;
+}
+.about p {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+.about .third {
+  width: 40%;
+  float: right;
+}
+.about .third img {
+  width: 100%;
+  border-radius: 20px;
+}
+.about .third .icon img {
+  width: 10% !important;
+  position: relative;
+  bottom: 225px;
+  left: 225px;
+}
+
+.last-bigwrapper {
+  width: 100%;
+  background: url("../img/meetings-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 180px 0px 110px;
+  height: 100%;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.15);
+}
+.last-bigwrapper .form-section {
+  width: 70%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  float: left;
+}
+.last-bigwrapper .form-section input {
+  width: 32%;
+  height: 40px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border: 0px;
+}
+.last-bigwrapper .form-section textarea {
+  width: 100%;
+  height: 150px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border: 0px;
+}
+.last-bigwrapper .form-section a {
+  font-size: 13px;
+  color: #fff;
+  background-color: #a12c2f;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  border: none;
+  text-decoration: none;
+}
+.last-bigwrapper .form-section a:hover {
+  opacity: 0.7;
+}
+.last-bigwrapper .form-section h3 {
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 10px;
+}
+.last-bigwrapper .details-section {
+  width: 25%;
+  background-color: #a12c2f;
+  padding: 22px 22px;
+  color: white;
+  border-radius: 20px;
+  float: right;
+  position: relative;
+  bottom: 40px;
+}
+.last-bigwrapper .details-section h5 {
+  font-size: 15px;
+}
+.last-bigwrapper .details-section h3 {
+  font-size: 17px;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.15);
+  padding-bottom: 20px;
+}
+
+footer {
+  background-size: cover;
+  background: url("../img/meetings-page-bg.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 50px 0px;
+}
+footer .copyright {
+  text-align: center;
+  color: white;
+  clear: both;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.bg {
+  width: 100%;
+  background: url("../img/heading-bg.jpg");
+  height: 500px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg .bg-banner {
+  background-color: rgba(250, 250, 250, 0.15);
+  width: 100%;
+  height: 110px;
+}
+.bg .bg-banner .meeting {
+  text-align: center;
+  color: #fff;
+  position: relative;
+  top: 135px;
+  letter-spacing: 1px;
+}
+.bg .bg-banner .meeting h5 {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.bg .bg-banner .meeting h1 {
+  font-size: 40px;
+}
+
+.team-details {
+  width: 100%;
+  background: url("../img/meetings-page-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.15) !important;
+}
+.team-details .team-details-with-image {
+  padding: 100px 15px;
+}
+.team-details .team-details-with-image .image {
+  width: 100%;
+}
+.team-details .team-details-with-image .image img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+.team-details .team-details-with-image .text {
+  background-color: white;
+  position: relative;
+  bottom: 5px;
+  padding: 80px;
+  border-radius: 0px 0px 20px 20px;
+}
+.team-details .team-details-with-image .text h3 {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+.team-details .team-details-with-image .text p {
+  font-size: 14px;
+  padding: 10px 0px;
+  margin-bottom: 20px;
+  line-height: 30px;
+  color: #1f272b;
+}
+.team-details .team-details-with-image .text .para {
+  font-size: 14px;
+  padding: 40px 0px;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  line-height: 30px;
+  color: #1f272b;
+}
+.team-details .team-details-with-image .text .booking {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 20px;
+}
+.team-details .team-details-with-image .text .booking .hours h4 {
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.team-details .team-details-with-image .text .booking .hours p {
+  color: #1f272b;
+}
+.team-details .team-details-with-image .text p {
+  font-size: 14px;
+  color: #1f272b;
+}
+.team-details .team-details-with-image .text p span {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+.team-details .team-details-with-image .meeting-list {
+  text-align: center;
+  position: relative;
+  padding: 50px 0px;
+}
+.team-details .team-details-with-image .meeting-list a {
+  padding: 12px 60px;
+  text-align: center;
+  background-color: #a12c2f;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.main2 {
+  width: 32%;
+  padding-bottom: 30px;
+}
+.main2 .image1 {
+  position: relative;
+}
+.main2 .image1 img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+.main2 .image1 span {
+  background-color: #fff;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.main2 .image1-text1 {
+  background-color: white;
+  padding: 30px;
+  border-radius: 0px 0px 20px 20px;
+  position: relative;
+  bottom: 7px;
+}
+.main2 .image1-text1 .nov1 {
+  width: 10%;
+}
+.main2 .image1-text1 .nov1 span {
+  color: #a12c2f;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+.main2 .image1-text1 .nov1 h4 {
+  font-weight: bold;
+}
+.main2 .image1-text1 .nov-text1 {
+  width: 80%;
+}
+.main2 .image1-text1 .nov-text1 h4 {
+  padding-bottom: 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.main2 .image1-text1 .nov-text1 p {
+  line-height: 25px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .banner-text {
+    top: 60px;
+  }
+  header .banner nav ul li a {
+    font-size: 14px;
+  }
+  header .banner nav ul li a:hover {
+    letter-spacing: 1px;
+  }
+  #slider1 {
+    margin-top: 150px;
+  }
+  .banner-text h2 {
+    font-size: 30px;
+  }
+  .bigwrapper .meeting-catgories .meeting-left #all {
+    padding: 12px 30px;
+  }
+  .last-bigwrapper .details-section {
+    padding: 40px;
+    bottom: 30px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .item1 p {
+    line-height: 20px;
+  }
+  .about .first {
+    width: 49%;
+    float: left;
+    margin-top: 0px;
+  }
+  .about .second {
+    width: 49%;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+  }
+  .about .third {
+    width: 100%;
+  }
+  .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot {
+    display: none;
+  }
+  #slider1 {
+    margin-top: 0px;
+    padding-top: 300px;
+  }
+  .bigwrapper .meeting-catgories .meeting-left {
+    padding: 40px;
+  }
+  .bigwrapper .meeting-catgories .meeting-left ul li a {
+    font-size: 14px;
+  }
+  .bigwrapper .meeting-catgories .meeting-left #all {
+    padding: 10px 30px;
+    font-size: 12px;
+  }
+  .bigwrapper .image-text .nov-text h4 {
+    font-size: 14px;
+  }
+  .bigwrapper .image-text .nov-text p {
+    font-size: 13px;
+  }
+  .bigwrapper .image-text .nov span {
+    font-size: 14px;
+  }
+  .about .third .icon img {
+    bottom: 415px;
+    left: 415px;
+  }
+}
+@media only screen and (max-width: 992px) and (max-width: 830px) {
+  header .banner .heading a {
+    font-size: 25px;
+  }
+  .main2 {
+    width: 100%;
+  }
+  .banner-text p {
+    font-size: 14px;
+  }
+  .banner-text h2 {
+    font-size: 25px;
+  }
+  .banner-text {
+    top: 45px;
+  }
+  #slider1 {
+    padding-top: 215px;
+  }
+  .bigwrapper .meeting-catgories .meeting-left {
+    width: 49%;
+  }
+  .bigwrapper .meeting-catgories .meeting-center {
+    width: 49%;
+  }
+  .bigwrapper .meeting-catgories .meeting-right {
+    width: 49%;
+    position: relative;
+    top: 16px;
+  }
+  .bigwrapper .meeting-2 {
+    justify-content: space-between;
+  }
+  .bigwrapper .meeting-2 .left {
+    width: 49%;
+  }
+  .team .team-left .team-left-left h3 {
+    font-size: 20px;
+  }
+  .team .team-left .team-left-left p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .team .team-left .team-left-left a {
+    padding: 10px 25px;
+  }
+  .team .team-left .team-left-left #yellow {
+    padding: 10px 25px;
+  }
+  .about .about-text h1 {
+    font-size: 25px;
+  }
+  .about .stat-count {
+    font-size: 40px !important;
+  }
+  .about p {
+    font-size: 14px;
+  }
+  .about .third .icon img {
+    bottom: 375px;
+    left: 360px;
+  }
+  .last-bigwrapper .form-section {
+    width: 100%;
+  }
+  .last-bigwrapper .details-section {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .course .img-text h4 {
+    font-size: 15px;
+  }
+  .fa {
+    font-size: 14px !important;
+  }
+  .course .dolor h5 {
+    font-size: 15px;
+  }
+  .about .second {
+    width: 100%;
+  }
+  .about .first {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .mini-header {
+    display: none;
+  }
+  .bg .bg-banner .meeting {
+    top: 145px;
+    z-index: -1;
+  }
+  .bg .bg-banner .meeting h1 {
+    font-size: 36px;
+  }
+  .bg .bg-banner {
+    height: 70px;
+  }
+  ul {
+    display: none;
+    position: sticky;
+    top: 0px;
+  }
+  .about .third .icon img {
+    bottom: 330px;
+    left: 330px;
+  }
+  #ul {
+    display: block;
+  }
+  header .banner {
+    padding: 20px 15px;
+    height: 74px;
+  }
+  header .banner .fa {
+    display: block;
+    color: white;
+    font-size: 20px !important;
+    border: 1px solid white;
+    margin: 0px;
+    margin-bottom: 6px !important;
+    padding: 5px 10px;
+  }
+  header .banner nav ul {
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 70px;
+    background-color: #2a2a2a;
+    width: 100%;
+  }
+  header .banner nav ul li {
+    float: none;
+    padding-bottom: 15px;
+  }
+  .bigwrapper .meeting-catgories .meeting-left {
+    width: 100%;
+    padding: 40px 40px 110px 40px;
+    margin-bottom: 20px;
+  }
+  .bigwrapper .meeting-catgories .meeting-center {
+    width: 100%;
+  }
+  .bigwrapper .meeting-catgories .meeting-right {
+    width: 100%;
+  }
+  .bigwrapper .meeting-2 .left {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .bigwrapper .image-text .nov-text h4 {
+    font-size: 18px;
+  }
+  .team .team-left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .team .team-right {
+    width: 100%;
+  }
+  .course .img-text ul {
+    display: block;
+  }
+  .course .img-text h4 {
+    font-size: 18px;
+  }
+  .course .dolor h5 {
+    font-size: 18px;
+  }
+  .fa {
+    font-size: 18px !important;
+  }
+  .about .third .icon img {
+    bottom: 335px;
+    left: 320px;
+  }
+}
+@media only screen and (max-width: 669px) {
+  .banner-text h6 {
+    font-size: 14px;
+  }
+  .bg .bg-banner .banner-text h2 {
+    font-size: 20px;
+    margin-top: -10px;
+  }
+  .banner-text p {
+    font-size: 14px;
+    margin-top: -10px;
+  }
+  .banner-text {
+    top: 34px;
+  }
+  .about .third .icon img {
+    bottom: 300px;
+    left: 300px;
+  }
+  .about .stat-count {
+    font-size: 25px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .team-details .team-details-with-image .text {
+    padding: 50px;
+  }
+  .bg .bg-banner .meeting h1 {
+    font-size: 26px;
+  }
+  .bg .bg-banner .meeting {
+    top: 165px;
+  }
+  .team-details .team-details-with-image .meeting-list a {
+    padding: 12px 30px;
+  }
+  .banner-text {
+    top: 27px;
+  }
+  .banner-text h6 {
+    font-size: 12px;
+  }
+  .banner-text h2 {
+    font-size: 16px;
+  }
+  .banner-text p {
+    font-size: 13px;
+  }
+  .banner-text #anchar {
+    font-size: 10px;
+    padding: 10px 25px;
+    position: relative;
+    bottom: 20px;
+  }
+  #slider1 {
+    top: -40px;
+  }
+  .about .third .icon img {
+    bottom: 260px;
+    left: 260px;
+  }
+  .course .img-text h4 {
+    font-size: 16px;
+  }
+  .course .dolor h5 {
+    font-size: 14px;
+  }
+  .fa {
+    font-size: 14px !important;
+  }
+  .last-bigwrapper .form-section input {
+    width: 31.5%;
+  }
+  .last-bigwrapper .form-section a {
+    font-size: 10px;
+    padding: 12px;
+  }
+}
+@media only screen and (max-width: 531px) {
+  .banner-text p {
+    display: none;
+  }
+  .about .third .icon img {
+    left: 235px;
+    bottom: 235px;
+  }
+  .banner-text {
+    top: 60px;
+    text-align: center;
+  }
+  .banner-text #anchar {
+    bottom: 60px;
+  }
+  .banner-text h2 {
+    margin-top: -20px;
+  }
+  #slider1 {
+    top: 25px;
+  }
+  footer .copyright {
+    font-size: 10px;
+  }
+  .item1 img {
+    width: 14% !important;
+  }
+}
+@media only screen and (max-width: 451px) {
+  .banner-text {
+    top: 40px;
+  }
+  .last-bigwrapper .form-section input {
+    width: 100%;
+  }
+  header .banner {
+    height: 70px;
+  }
+  #slider1 {
+    top: -20px;
+  }
+  .bigwrapper .meeting .text h2 {
+    font-size: 20px;
+  }
+  .about .third .icon img {
+    bottom: 190px;
+    left: 190px;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .banner-text {
+    top: 23px;
+  }
+  .bg .bg-banner .meeting {
+    top: 170px;
+  }
+  .team-details .team-details-with-image .text h3 {
+    font-size: 18px;
+  }
+  .team-details .team-details-with-image .text .para {
+    text-align: justify;
+  }
+  .team-details .team-details-with-image .meeting-list a {
+    font-size: 10px;
+  }
+  .team-details .team-details-with-image .meeting-list {
+    padding: 35px;
+  }
+  .bg .bg-banner .meeting h1 {
+    font-size: 21px;
+  }
+  header .banner .heading a {
+    font-size: 20px;
+  }
+  header .banner .heading a {
+    position: relative;
+    top: 3px;
+  }
+  .bigwrapper .meeting-catgories .meeting-left #all {
+    padding: 10px 20px;
+    font-size: 9px;
+  }
+  .bigwrapper .image-text .nov-text h4 {
+    font-size: 15px;
+  }
+  .team .team-left .team-left-left h3 {
+    font-size: 18px;
+  }
+  .team .team-left .team-left-left a {
+    font-size: 10px;
+  }
+  .team .team-left .team-left-left #yellow {
+    font-size: 10px;
+  }
+  .team .team-right h3 {
+    padding: 17px;
+    font-size: 15px;
+  }
+  .course .course-text h2 {
+    font-size: 20px;
+  }
+  .about .about-text h1 {
+    font-size: 20px;
+  }
+  .about .third .icon img {
+    bottom: 180px;
+    left: 180px;
+  }
+  .last-bigwrapper .form-section input {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 346px) {
+  .banner-text {
+    top: 15px;
+  }
+  #slider1 {
+    top: -75px;
+  }
+  .bigwrapper .meeting .text {
+    padding-top: 20px;
+  }
+  .banner-text h2 {
+    font-size: 14px;
+  }
+  .banner-text #anchar {
+    font-size: 8px;
+    bottom: 40px;
+  }
+  .bigwrapper .meeting-catgories .meeting-left ul li a {
+    font-size: 12px;
+  }
+  .team .team-left .team-left-left p {
+    font-size: 13px;
+  }
+  .team .team-left .team-left-left h3 {
+    font-size: 15px;
+  }
+  .about .third .icon img {
+    bottom: 150px;
+    left: 150px;
+  }
+  .team .team-right h3 {
+    font-size: 12px;
+  }
+  .bigwrapper .meeting .text h2, .about .about-text h1, .course .course-text h2 {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .banner-text #anchar {
+    bottom: 35px;
+  }
+  .about .third .icon img {
+    bottom: 160px;
+    left: 160px;
+  }
+}
+@media only screen and (max-width: 391px) {
+  .banner-text #anchar {
+    bottom: 30px;
+  }
+  .about .third .icon img {
+    bottom: 165px;
+    left: 165px;
+  }
+}
+@media only screen and (max-width: 394px) {
+  .banner-text #anchar {
+    bottom: 60px;
+  }
+  .about .third .icon img {
+    bottom: 165px;
+    left: 170px;
+  }
+}
+@media only screen and (max-width: 361px) {
+  .banner-text {
+    top: 15px;
+  }
+  .about .third .icon img {
+    bottom: 155px;
+    left: 155px;
+  }
+  #slider1 {
+    top: -45px;
+  }
+  .bigwrapper {
+    margin-top: -6px;
+  }
+  .team .team-right h3 {
+    padding: 9px;
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .last-bigwrapper .details-section h3 {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 322px) {
+  .main2 .image1-text1 .nov-text1 h4 {
+    font-size: 16px;
+  }
+  .main2 .image1-text1 .nov-text1 p {
+    font-size: 12px;
+  }
+  .bigwrapper {
+    margin-top: -25px;
+  }
+  .banner-text {
+    top: 6px;
+  }
+}/*# sourceMappingURL=style.css.map */
